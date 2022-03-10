@@ -1,0 +1,8 @@
+// Note all settings forked from https://www.codecademy.com/courses/learn-typescript/projects/park-service-volunteer-apprciation-program
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs"
+  },
+  "include": ["**/*.ts"]
+}
