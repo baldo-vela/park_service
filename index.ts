@@ -36,11 +36,16 @@ import {
     });
   }
   
+  function isVerified(verified: string | boolean) {
+
+  }
+
   function calculateHours(volunteers: Volunteers[]) {
     return volunteers.map((volunteer) => {
       let hours = 0;
   
       volunteer.activities.forEach((activity) => {
+
   
       });
   
