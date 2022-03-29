@@ -56,3 +56,4 @@ import {
     [].concat(wolfPointVolunteers, raccoonMeadowsVolunteers)
   );
   
+  console.log('combinedVolunteers:', combinedVolunteers);
