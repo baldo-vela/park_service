@@ -22,7 +22,7 @@ import {
     volunteers: (RaccoonMeadowsVolunteers | WolfPointVolunteers)[]
   ) {
       return volunteers.map((volunteer) => {
-        
+        let id = volunteer.id;
       });
   
   }
