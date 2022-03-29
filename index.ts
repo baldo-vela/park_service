@@ -35,7 +35,7 @@ import {
       }
     });
   }
-  
+  //~~~~~~~~~~~~ Helper Functions for #calculateHours ~~~~~~~~~~~~
   function isVerified(verified: string | boolean) {
     if (typeof verified === 'string') {
       if (verified === 'Yes') return true;
@@ -50,7 +50,6 @@ import {
     } else {
       return activity.time;
     }
-
   }
 
   function calculateHours(volunteers: Volunteers[]) {
@@ -59,7 +58,7 @@ import {
   
       volunteer.activities.forEach((activity) => {
         if (isVerified(activity.verified)) {
-
+          
         }
       });
   
