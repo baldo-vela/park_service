@@ -41,6 +41,7 @@ import {
       if (verified === 'Yes') return true;
       if (verified === 'No') return false;
     }
+    return verified;
   }
 
   function calculateHours(volunteers: Volunteers[]) {
