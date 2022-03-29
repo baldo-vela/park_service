@@ -37,7 +37,10 @@ import {
   }
   
   function isVerified(verified: string | boolean) {
-
+    if (typeof verified === 'string') {
+      if (verified === 'Yes') return true;
+      if (verified === 'No') return false;
+    }
   }
 
   function calculateHours(volunteers: Volunteers[]) {
