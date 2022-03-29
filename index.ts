@@ -21,13 +21,19 @@ import {
   function combineVolunteers(
     volunteers: (RaccoonMeadowsVolunteers | WolfPointVolunteers)[]
   ) {
-      return volunteers.map((volunteer) => {
-        let id = volunteer.id;
-        if (typeof id === 'string') {
-          id = parseInt('id', 10); 
-        }
-      });
-  
+    return volunteers.map((volunteer) => {
+      let id = volunteer.id;
+       
+      if (typeof id === 'string') {
+        id = parseInt('id', 10); 
+      }
+
+      return {
+        id: volunteer.id,
+        name: volunteer.name,
+        activities: volunteer.activities,
+      }
+    });
   }
   
   function calculateHours(volunteers: Volunteers[]) {
