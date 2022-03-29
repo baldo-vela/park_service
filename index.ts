@@ -25,7 +25,7 @@ import {
       let id = volunteer.id;
        
       if (typeof id === 'string') {
-        id = parseInt('id', 10); 
+        id = parseInt(id, 10); 
       }
 
       return {
