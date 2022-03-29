@@ -21,6 +21,9 @@ import {
   function combineVolunteers(
     volunteers: (RaccoonMeadowsVolunteers | WolfPointVolunteers)[]
   ) {
+      return volunteers.map((volunteer) => {
+        
+      });
   
   }
   
