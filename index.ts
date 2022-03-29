@@ -58,6 +58,7 @@ import {
   
       volunteer.activities.forEach((activity) => {
         if (isVerified(activity.verified)) {
+          hours = hours + getHours(activity);
           
         }
       });
@@ -75,3 +76,7 @@ import {
   );
   
   console.log('combinedVolunteers:', combinedVolunteers);
+
+  const result = calculateHours(combinedVolunteers);
+
+console.log("Result: /n", result);
