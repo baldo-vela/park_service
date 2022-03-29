@@ -46,9 +46,9 @@ import {
 
   function getHours(activity: CombinedActivity) {
     if ('hours' in activity) {
-
+      return activity.hours;
     } else {
-      
+      return activity.time;
     }
 
   }
