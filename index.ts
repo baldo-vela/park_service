@@ -44,6 +44,15 @@ import {
     return verified;
   }
 
+  function getHours(activity: CombinedActivity) {
+    if ('hours' in activity) {
+
+    } else {
+      
+    }
+
+  }
+
   function calculateHours(volunteers: Volunteers[]) {
     return volunteers.map((volunteer) => {
       let hours = 0;
