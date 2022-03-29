@@ -70,6 +70,10 @@ import {
       };
     });
   }
+// Custom Comparator 
+  function byHours(a, b) {
+    return b.hours - a.hours;
+  }
   
   const combinedVolunteers = combineVolunteers(
     [].concat(wolfPointVolunteers, raccoonMeadowsVolunteers)
@@ -77,6 +81,6 @@ import {
   
   console.log('combinedVolunteers:', combinedVolunteers);
 
-  const result = calculateHours(combinedVolunteers);
+  const result = calculateHours(combinedVolunteers).sort(byHours);
 
 console.log("Result: /n", result);
