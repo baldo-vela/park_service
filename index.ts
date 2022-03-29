@@ -70,7 +70,7 @@ import {
       };
     });
   }
-// Custom Comparator 
+// Custom Comparator for Sorting  
   function byHours(a, b) {
     return b.hours - a.hours;
   }
