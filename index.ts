@@ -29,7 +29,7 @@ import {
       }
 
       return {
-        id: volunteer.id,
+        id: id,
         name: volunteer.name,
         activities: volunteer.activities,
       }
